@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+body, ul, li, p, #reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;}
+
+body {background-color: rgba(32,33,36,1);}
+
+/*Imagem - Div*/
+div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+div #google {margin-top: 12rem}
+
+/*Menu Superior*/
+a {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
+
+.menu {
+  display: flex; 
+  justify-content: flex-end;
+}
+
+.menu li {
+  padding: 20px 20px 0px 0px; /*top, right, bottom, left*/
+  font-family: 'Roboto', sans-serif;
+  font-size: 13px;
+}
+
+.menu li a:hover {text-decoration: underline;}
+
+/*PARTE DA GAVETA DE APPS - 3° ITEM DO HEADER*/
+header img {
+  width: 20px;
+  height: 20px;
+  filter: invert(100%);
+}
+
+header #app {
+  padding: 8px;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  margin: 10px 10px 10px 0px; /*top, right, bottom, left*/       
+}
+
+header div:hover {
+  background:#303134;
+}
+
+header #perfil {
+  margin: 10px 10px 10px 0px; /*top, right, bottom, left*/       
+  border-radius: 50%;
+  background: black;
+  padding: 8px 8px 8px 8px;
+  width: 15px;
+  height: 15px;
+  border: 5px solid rgba(32,33,36,1);
+}
+
+header #perfil:hover {
+  border: 5px solid #303134;
+}
+
+/*Formulário*/
+#barra-a {padding-top: 26px;}
+#barra {
+  margin: 0 auto;
+  border-radius: 80px;
+  background: #ffffff00;
+  border: 0.5px solid #3c4043;
+  color: white;
+  align-items: center;
+}
+#barra:hover {
+          background:#303134; 
+          border: 0.5px solid #303134;
+      }
+      
+#barra-a, #barra-b{text-align: center;}
+
+@media (min-width: 280px) and (max-width: 700px) {
+  #barra-b {width: 100%;}
+  #barra {width: 90%; max-width: 90%;}
+}
+
+/*INPUT E LABEL DA BARRA DE PESQUISA PRINCIPAL*/
+#barra-form {width: 500px;}
+#barra-form input {
+  width: 100%;
+  background: #ffffff00;
+  border: none;
+  font-size: 17px;
+  color: white;
+}
+#barra-form:focus, input:focus 
+{
+  box-shadow: 0 0 0 0;
+  outline: 0;
+}   
+#barra-lupa {width: 20px;}
+#barra-teclado {width: 20px;}
+#barra-microfone {width: 25px;}
+#barra-camera {width: 20px;}
+
+#barra ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  padding: 5px 10px 5px 10px;       
+}
+
+li {padding: 5px;}
+
+@media (min-width:280px) and (max-width: 700px) {
+  #barra-form { width: auto;}
+}
+
+/*BOTOES ABAIXO DA BARRA DE PESQUISA*/
+.pesquisaBotao {
+  background: #303134;
+  border-radius: 4px;
+  padding: 10px 16px 10px 16px;
+  margin: 29px 4px 29px 4px;
+  border: 1px solid #303134;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.pesquisaBotao:hover {border: 0.5px solid #4d4e51;}
+
+
+/*FOOTER*/
+footer {
+  position: fixed;
+  bottom: 0;
+  color: #999da2;
+  width: 100%;
+  background: #171819;
+}
+
+footer p {
+  padding: 15px 30px;
+  border-bottom: 1px solid #3c4043;
+  font-size: 15px;
+  font-family: arial,sans-serif;
+}
+
+footer li {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  padding: 15px;
+}
+
+footer li:hover {
+  text-decoration: underline;
+}
+#footer-principal{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;  
+  padding: 0 20px;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 1200px) {
+  #footer-principal {justify-content: space-evenly;}
+}
+#footer1{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  padding-top: 0;
+}
+#footer2{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  padding-top: 0;
+}
